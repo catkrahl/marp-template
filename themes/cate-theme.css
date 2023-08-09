@@ -1,0 +1,11 @@
+/* @theme cate-theme */
+@import "default";
+h1 {
+  display: inline;
+  color: red;
+  display: inline;
+  background: orange;
+  box-shadow: 10px 0 0 orange, -10px 0 0 orange;
+}
+
+/*# sourceMappingURL=cate-theme.css.map */
