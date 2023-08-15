@@ -1,6 +1,6 @@
 # Marp Template CaT / cate
 
-This repo bundles our CaT / cate presentation theme for marp together with a way to quickly change and test style code and export a standalone presentation.
+This repo bundles our **CaT/cate presentation theme** for marp together with a way to quickly change style code and export a standalone html presentation by controlling the sass compiler and marp cli export through a python script.
 
 ## Making a presentation
 
@@ -77,6 +77,8 @@ You can use Visual Studio Code (https://snapcraft.io/code) and the marp extensio
 You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
 ## Compiling and exporting in Ubuntu
+
+Python3 should already be pre-installed on Ubuntu.
 
 **You need to download and unzip the following dependencies:**
 * Dart SASS: https://github.com/sass/dart-sass/releases
