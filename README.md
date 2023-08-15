@@ -4,9 +4,9 @@ This repo bundles our CaT / cate presentation theme for marp together with a way
 
 ## Making a presentation
 
-### Front-Matter
+### Front Matter
 
-To make sure that marp (and VSCode if used for a live preview) can properly handle this theme, you have to start your presentation markdown file like this:
+To make sure that marp (and VSCode if used for a live preview) can properly handle this theme, you have to start your presentation markdown file with some front matter (header, footer and pagination can be set to your liking):
 
 ```markdown
 ---
@@ -76,13 +76,13 @@ You can use Visual Studio Code (https://snapcraft.io/code) and the marp extensio
 
 You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
-## Compiling in Ubuntu
+## Compiling and exporting in Ubuntu
 
 **You need to download and unzip the following dependencies:**
 * Dart SASS: https://github.com/sass/dart-sass/releases
 * Marp CLI: https://github.com/marp-team/marp-cli/releases
 
-**And make the program file available through PATH variables to be called with 'sass' and 'marp' respectively from the terminal** e.g. by placing them in or linking to them from ~/.local/bin (just the local user) or usr/local/bin (all users).
+**And make the program files available through PATH variables to be called with 'sass' and 'marp' respectively from the terminal** e.g. by placing them in or linking to them from ~/.local/bin (just the local user) or usr/local/bin (all users).
 
 Then you can use the Python script `compile-sass-and-export-marp.py` to both refresh the style code and to export a html version of the presentation.
 
