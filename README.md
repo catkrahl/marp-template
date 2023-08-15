@@ -74,15 +74,15 @@ If you add more images you may want to place them in img/.
 
 You can use Visual Studio Code (https://snapcraft.io/code) and the marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to get a live preview while you edit your presentation.
 
-You can take this folder as a basis, because you need img/, fonts/, .vscode/ and their contents for the cate-theme to work.
+You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
 ## Compiling in Ubuntu
 
 **You need to download and unzip the following dependencies:**
-Dart SASS: https://github.com/sass/dart-sass/releases
-Marp CLI: https://github.com/marp-team/marp-cli/releases
+* Dart SASS: https://github.com/sass/dart-sass/releases
+* Marp CLI: https://github.com/marp-team/marp-cli/releases
 
-**And make the unzipped program file available through PATH variables to be called with 'sass' and 'marp' respectively from the terminal** e.g. by placing them in or linking to them from ~/.local/bin (just the local user) or usr/local/bin (all users).
+**And make the program file available through PATH variables to be called with 'sass' and 'marp' respectively from the terminal** e.g. by placing them in or linking to them from ~/.local/bin (just the local user) or usr/local/bin (all users).
 
 Then you can use the Python script `compile-sass-and-export-marp.py` to both refresh the style code and to export a html version of the presentation.
 
@@ -102,4 +102,4 @@ You can also give the file name when calling the script and take all default opt
 python3 compile-sass-and-export-marp.py example.md --all-default
 ```
 
-The html version of the presentation needs img/ and fonts/ next to it to be displayed correctly.
+The html version of the presentation needs img/ and fonts/ next to it to be displayed correctly. The folder themes/ is no longer needed as the style code is embedded in the html file.
