@@ -6,7 +6,9 @@ This repo bundles our **CaT/cate presentation theme** for marp together with a w
 
 ### Front Matter
 
-To make sure that marp (and VSCode if used for a live preview) can properly handle this theme, you have to start your presentation markdown file with some front matter (header, footer and pagination can be set to your liking):
+To make sure that marp (and VSCode if used for a live preview) can properly handle this theme, you have to start your presentation markdown file with some front matter.
+
+Header, footer and pagination can be set to your liking.
 
 ```markdown
 ---
@@ -14,7 +16,7 @@ To make sure that marp (and VSCode if used for a live preview) can properly hand
 marp: true
 theme: cate-theme
 paginate: false
-header: "ILIAS DevConf September 2023"
+header: ILIAS DevConf September 2023
 footer: No ILIAS on a dead planet.
 
 ---
@@ -52,7 +54,7 @@ Slide 2
 
 ### Special Slides
 
-This cate-theme has special cover slide templates for the title and chapter slides that can be selected for the current slide like so:
+This cate-theme has special slide templates for the title and chapter slides that can be selected for the current slide like so:
 
 ```markdown
 <!-- _class: title-01 -->
@@ -60,9 +62,9 @@ This cate-theme has special cover slide templates for the title and chapter slid
 # **Headline on this cover slide**
 ```
 
-The underscore in front of class scopes this style for this current slide only.
+The underscore in `_class` scopes this template style for this current slide only.
 
-Note the `**` bold markdown around the entire headline text. This is needed so the headline css styling works correctly on this slide template.
+**The `**` bold markdown around the entire headline text is needed so the headline css styling works correctly on this slide template.** In the future the python script may be able to enforce this, but for now, you will have to make sure they are there!
 
 ### Images
 
