@@ -1,7 +1,240 @@
-h1 {
-    display: inline;
-    color: red;
-    display: inline;
-    background: orange;
-    box-shadow: 10px 0 0 orange, -10px 0 0 orange;
+$fade-inactive-bullets-to-gray: false;
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+    font-weight: 200;
+  }
+
+$cat-color-1: #009bea;
+$cat-color-2: #c1d31c;
+$cat-color-3: #89d37e;
+$cat-color-4: #ce1970;
+$cat-color-5: #faae1d;
+$cat-color-6: #4a154b;
+$cat-darkgray: #444;
+$cat-midgray: #686868;
+$cat-lightgray: #f5f5f5;
+$cat-bg-color: #ffffff;
+$cat-bg-color-1: #f4f4f4;
+$cat-bg-color-2: $cat-color-2;
+$cat-bg-dark-blue: #1A1D2D;
+$cat-text-color: $cat-darkgray;
+$cat-text-color-invert: #ffffff;
+
+:root {
+    color: $cat-text-color;
+    font-family: "Nunito Sans";
+    font-weight: 200;
 }
+
+section {
+    --color-fg-default: #{$cat-text-color};
+    // --color-fg-muted: #57606a;
+    // --color-fg-subtle: #6e7781
+    --h1-color: #{$cat-color-1};
+    --header-footer-color: #{$cat-midgray};
+    --heading-strong-color: #{$cat-text-color};
+    --paginate-color: #{$cat-midgray};
+}
+
+h1, h2, h3, h4, h5, p {
+    font-weight: 200;
+    animation: fade-in .5s forwards;
+}
+
+h2, h3 {
+    color: $cat-color-1;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h1 strong {
+    background-color: $cat-color-1;
+    color: $cat-text-color-invert; 
+    line-height: 3.2rem;
+    padding: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+h2 strong {
+    background-color: $cat-lightgray;
+    color: $cat-text-color;
+    line-height: 2.65rem;
+    padding: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer {
+    left: 30px;
+    right: 30px;
+    bottom: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer::before {
+    content: url(img/logo.png);
+    min-height: 25px;
+    min-width: 25px;
+    zoom: .5;
+}
+
+// pagination
+
+section::after {
+    top: 21px;
+    left: auto;
+    right: 30px;
+}
+
+// li bullet points fade effect
+
+@if $fade-inactive-bullets-to-gray {
+    li:not([data-bespoke-marp-current-fragment="current"]) {
+        opacity: .4;
+    }
+}
+
+// animation templates
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+//
+// SLIDES WITH NO MARGIN HEADLINES
+//
+
+section.title-01,
+section.title-02 {
+    &,
+    &--white-text {
+        h1, h2 {
+            margin-left: -80px;
+        }
+        h1 strong, h2 strong {
+            padding-left: 40px;
+        }
+    }
+}
+
+//
+// SLIDES WITH HEADLINES CLOSE TOGETHER
+//
+
+section.title-01,
+section.title-02,
+section.chapter-01 {
+    &,
+    &--white-text {
+        h1 + h2 {
+            margin-top: -30px;
+        }
+        h2 + h1 {
+            margin-top: -30px;
+        }
+    }
+}
+
+//
+// SLIDES WITH INVERTED COLOR
+//
+
+@mixin invert-text-color() {
+    footer::before {
+        content: url(img/logo-invert.png);
+    }
+    p
+    h2,
+    h3 {
+        color: $cat-text-color-invert;
+    }
+    h1 strong {
+        background-color: rgba($cat-bg-color, .2);
+    }
+    h2 strong {
+        background-color: rgba($cat-darkgray, .1);
+        color: $cat-text-color-invert;
+    }
+    h3 strong {
+        color: $cat-text-color-invert;
+    }
+    & {
+        --h1-color: #{$cat-text-color-invert};
+        --header-footer-color: #{$cat-text-color-invert};
+        --heading-strong-color: #{$cat-text-color-invert};
+        --paginate-color: #{$cat-text-color-invert};
+    }
+}
+
+@mixin invert-footer-header-color() {
+    footer::before {
+        content: url(img/logo-invert.png);
+    }
+    & {
+        --h1-color: #{$cat-text-color-invert};
+        --header-footer-color: #{$cat-text-color-invert};
+        --heading-strong-color: #{$cat-text-color-invert};
+        --paginate-color: #{$cat-text-color-invert};
+    }
+}
+
+// these slides always have white text
+
+section.chapter-01,
+section.title-01 {
+    @include invert-text-color()
+}
+
+// these slides can optionally have white text in header/footer (e.g. with a dark bg image)
+
+section.title-02--white-text {
+    @include invert-footer-header-color()
+}
+
+//
+// SLIDE SPECIFIC STYLES
+//
+
+section.title-01 {
+    background-image: url(img/title-020_bg.png);
+    background-size: cover;
+}
+
+section.chapter-01 {
+    background-image: url(img/chapter-010_bg.png);
+    background-size: cover;
+    h1, h2, h3 {
+        text-align: center;
+    }
+    h2 strong {
+        background-color: rgba($cat-bg-color, .2);
+        color: $cat-text-color-invert;
+    }
+}
+
