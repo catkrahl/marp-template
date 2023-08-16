@@ -1,4 +1,8 @@
+@use "sass:list";
+@use "sass:math";
+
 $fade-inactive-bullets-to-gray: false;
+$logo-size: (570px, 50px); // we half this later so icons stay sharp when 1280x720px canvas is blown up to 1920x1080px
 
 @font-face {
     font-family: "Nunito Sans";
@@ -97,8 +101,8 @@ footer::before {
     background-image: url(img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 25px;
-    width: 50%;
+    width: math.div(list.nth($logo-size, 1), 2);
+    height: math.div(list.nth($logo-size, 2), 2);
 }
 
 // pagination

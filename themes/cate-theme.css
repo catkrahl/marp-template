@@ -78,8 +78,8 @@ footer::before {
   background-image: url(img/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
+  width: 285px;
   height: 25px;
-  width: 50%;
 }
 
 section::after {
