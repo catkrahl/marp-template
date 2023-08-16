@@ -93,10 +93,12 @@ footer {
 }
 
 footer::before {
-    content: url(img/logo.png);
-    min-height: 25px;
-    min-width: 25px;
-    zoom: .5;
+    content: " ";
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 50%;
 }
 
 // pagination
@@ -167,7 +169,7 @@ section.chapter-01 {
 
 @mixin invert-text-color() {
     footer::before {
-        content: url(img/logo-invert.png);
+        background-image: url(img/logo-invert.png);
     }
     p
     h2,
@@ -194,7 +196,7 @@ section.chapter-01 {
 
 @mixin invert-footer-header-color() {
     footer::before {
-        content: url(img/logo-invert.png);
+        background-image: url(img/logo-invert.png);
     }
     & {
         --h1-color: #{$cat-text-color-invert};
