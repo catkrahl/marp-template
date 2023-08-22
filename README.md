@@ -96,9 +96,8 @@ You can use Visual Studio Code (https://snapcraft.io/code) and the marp extensio
 You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
 ## (Re-)compiling the theme
-The html version of the presentation needs img/ and fonts/ next to it to be displayed correctly. The folder themes/ is no longer needed as the style code is embedded in the html file.
 
-You can use the Python script `compile-sass.py` to compile the theme's style code. This is usually only necessary if you changed the scss file or want to use one of the preset flags.
+You can use the Python script `compile-sass.py` to compile the theme's style code. This is usually only necessary if you changed the scss file or want to change one of the preset flags.
 
 The script assumes that you have dart-sass installed from the Ubuntu software snap store.
 
@@ -113,10 +112,10 @@ python3 compile-sass.py
 You will be prompted to set the following flag:
 * set if inactive bullet points should fade to gray true/false (this modifies scss first, then compiles)
 
-You can also give the file name when calling the script and take all default options like so:
+You can also take all default options like so:
 
 ```bash
-python3 compile-sass.py example.md --all-default
+python3 compile-sass.py --all-default
 ```
 
 This script no longer exports the presentation. Please use VSCode with the official marp extension instead.
