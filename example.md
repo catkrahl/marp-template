@@ -54,12 +54,36 @@ It could be
 
 ---
 
+![bg left:33%](example-img/pexels-bruno-thethe-1910236.jpg)
+
+### A slide with some more space for text
+
+It could be
+
+* an impressive screenshot there
+* a hilarious meme
+* or a picture of a cute and cuddly kitten, because why not
+
+---
+
 ![bg right fit](example-img/screenshot_mainbar.png)
 
 <!-- The "fit" parameter makes the background fit inside of the slide -->
 ### A slide next to an image
 
 It could be 
+
+* an impressive screenshot there
+* a hilarious meme
+* or a picture of a cute and cuddly kitten, because why not
+
+---
+
+![bg right:33%](example-img/pexels-bruno-thethe-1910236.jpg)
+
+### A slide with some more space for text
+
+It could be
 
 * an impressive screenshot there
 * a hilarious meme
