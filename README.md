@@ -13,7 +13,9 @@ You can write your presentation in any text editor you would like. However, VSCo
 
 Fork and branch this repo and use example.md as a base for your next presentation. You need to keep themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
-After exporting HTML from VSCode you only need the html file and the folders img/ and fonts/ inside the same folder if you distribute or upload the presentation.
+You can export your presentation as static HTML that no longer needs VSCode running by opening VSCode's command palette with Ctrl + P and start typing ">Marp: Export Slide Deck...". In the following dialog select HTML as the export format.
+
+If you distribute or upload the presentation, you need to keep the html file and the folders img/ and fonts/ inside the same location.
 
 If you have difficulties exporting PDF, make an HTML export, open in the browser, start printing with Ctrl + P and choose "Save as PDF". The PDF is of course completely standalone and doesn't require any other files.
 
