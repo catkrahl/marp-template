@@ -89,7 +89,11 @@ section::after {
 }
 
 li:not([data-bespoke-marp-current-fragment=current]) {
-  opacity: 0.4;
+  color: rgba(68, 68, 68, 0.4);
+}
+
+li:not([data-bespoke-marp-current-fragment=current]) > ul > li[data-bespoke-marp-current-fragment=current] {
+  color: #444;
 }
 
 @keyframes fade-in {

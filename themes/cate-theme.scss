@@ -117,7 +117,10 @@ section::after {
 
 @if $fade-inactive-bullets-to-gray {
     li:not([data-bespoke-marp-current-fragment="current"]) {
-        opacity: .4;
+        color: rgba($cat-text-color, 0.4);
+    }
+    li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
+        color: $cat-text-color;
     }
 }
 
