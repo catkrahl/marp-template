@@ -35,6 +35,8 @@ If you get an error message while exporting PDF, you can make an HTML export ins
 
 ## Making a presentation
 
+You can find a complete overview of the marp specific markdown syntax in the official documentation: https://marpit.marp.app/markdown
+
 ### Front Matter
 
 To make sure that marp (and VSCode if used for a live preview) can properly handle this theme, you have to start your presentation markdown file with some front matter.
@@ -101,13 +103,11 @@ The underscore in `_class` scopes this template style for this current slide onl
 
 See example.md for some example code of how to deal with images.
 
-If you add more images you may want to place them in img/.
+If you add more images you may want to place them in the img/ folder. This way you can grab them together with the logo files that are already stored there when you distribute the presentation.
 
-### Live Preview
+Background images should be at least 1080 px high to not look pixelated. However, an image that is 720 px high will already fill 100% height of the slide as marp assumes a coordinate system of 1280 x 720 units.
 
-You can use Visual Studio Code (https://snapcraft.io/code) and the marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to get a live preview while you edit your presentation.
-
-You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
+All information for how to deal with images both inline and for the slide background can be found in the marp documentation: https://marpit.marp.app/image-syntax
 
 ## (Re-)compiling the theme
 
