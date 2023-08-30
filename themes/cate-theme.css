@@ -215,4 +215,8 @@ section.chapter-02 h2 strong {
   color: #ffffff;
 }
 
+marp-pre {
+  overflow: auto !important;
+}
+
 /*# sourceMappingURL=cate-theme.css.map */
