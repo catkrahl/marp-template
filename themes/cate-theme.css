@@ -123,41 +123,52 @@ section.title-01 h1 + h2, section.title-01--white-text h1 + h2,
 section.title-02 h1 + h2,
 section.title-02--white-text h1 + h2,
 section.chapter-01 h1 + h2,
-section.chapter-01--white-text h1 + h2 {
+section.chapter-01--white-text h1 + h2,
+section.chapter-02 h1 + h2,
+section.chapter-02--white-text h1 + h2 {
   margin-top: -30px;
 }
 section.title-01 h2 + h1, section.title-01--white-text h2 + h1,
 section.title-02 h2 + h1,
 section.title-02--white-text h2 + h1,
 section.chapter-01 h2 + h1,
-section.chapter-01--white-text h2 + h1 {
+section.chapter-01--white-text h2 + h1,
+section.chapter-02 h2 + h1,
+section.chapter-02--white-text h2 + h1 {
   margin-top: -30px;
 }
 
 section.chapter-01 footer::before,
+section.chapter-02 footer::before,
 section.title-01 footer::before {
   background-image: url(img/logo-invert.png);
 }
 section.chapter-01 p h2,
 section.chapter-01 h3,
+section.chapter-02 p h2,
+section.chapter-02 h3,
 section.title-01 p h2,
 section.title-01 h3 {
   color: #ffffff;
 }
 section.chapter-01 h1 strong,
+section.chapter-02 h1 strong,
 section.title-01 h1 strong {
   background-color: rgba(255, 255, 255, 0.2);
 }
 section.chapter-01 h2 strong,
+section.chapter-02 h2 strong,
 section.title-01 h2 strong {
   background-color: rgba(68, 68, 68, 0.1);
   color: #ffffff;
 }
 section.chapter-01 h3 strong,
+section.chapter-02 h3 strong,
 section.title-01 h3 strong {
   color: #ffffff;
 }
 section.chapter-01,
+section.chapter-02,
 section.title-01 {
   --h1-color: #ffffff;
   --header-footer-color: #ffffff;
@@ -182,12 +193,24 @@ section.title-01 {
 
 section.chapter-01 {
   background-image: url(img/chapter-010_bg.png);
+}
+
+section.chapter-02 {
+  background-image: url(img/chapter-020_bg.png);
+}
+
+section.chapter-01,
+section.chapter-02 {
   background-size: cover;
 }
-section.chapter-01 h1, section.chapter-01 h2, section.chapter-01 h3 {
+section.chapter-01 h1, section.chapter-01 h2, section.chapter-01 h3,
+section.chapter-02 h1,
+section.chapter-02 h2,
+section.chapter-02 h3 {
   text-align: center;
 }
-section.chapter-01 h2 strong {
+section.chapter-01 h2 strong,
+section.chapter-02 h2 strong {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }

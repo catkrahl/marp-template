@@ -158,7 +158,8 @@ section.title-02 {
 
 section.title-01,
 section.title-02,
-section.chapter-01 {
+section.chapter-01,
+section.chapter-02 {
     &,
     &--white-text {
         h1 + h2 {
@@ -216,6 +217,7 @@ section.chapter-01 {
 // these slides always have white text
 
 section.chapter-01,
+section.chapter-02,
 section.title-01 {
     @include invert-text-color()
 }
@@ -237,6 +239,14 @@ section.title-01 {
 
 section.chapter-01 {
     background-image: url(img/chapter-010_bg.png);
+}
+
+section.chapter-02 {
+    background-image: url(img/chapter-020_bg.png);
+}
+
+section.chapter-01,
+section.chapter-02 {
     background-size: cover;
     h1, h2, h3 {
         text-align: center;

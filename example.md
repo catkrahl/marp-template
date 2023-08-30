@@ -91,6 +91,16 @@ It could be
 
 ---
 
+<!-- _class: chapter-02 -->
+
+### **Optional Chapter Sub-Headline**
+
+## **A second alternative chapter cover**
+
+<!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
 # A slide with some code on it
 
 ```php
