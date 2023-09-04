@@ -37,6 +37,7 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 ### An interesting thing to talk about
 
 * with this very important point to consider
+  * and a nested bullet point here
 * and here is another one that needs a couple lines of text to really make clear what it is all about and why whe whould consider this
 * three bullet points is a good amount of bullet points for a slide
 
@@ -132,6 +133,7 @@ Images can be resized:
 
 * for a cozy darkmode feel
 * also perfect for dark images as backgrounds
+  * even with nested bullet points
 
 ---
 
@@ -143,7 +145,7 @@ Images can be resized:
 
 * for a cozy darkmode feel
 * also perfect for dark images as backgrounds
-
+  * even with nested bullet points
 ---
 
 <!-- _class: title-02 -->
