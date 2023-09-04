@@ -71,10 +71,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 
 footer::before {
   content: " ";
+  margin-right: 15px;
+  flex-shrink: 0;
   background-image: url(img/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
