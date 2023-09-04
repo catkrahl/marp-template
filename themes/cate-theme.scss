@@ -115,6 +115,8 @@ section::after {
 
 // li bullet points fade effect
 
+
+
 @if $fade-inactive-bullets-to-gray {
     li:not([data-bespoke-marp-current-fragment="current"]) {
         color: rgba($cat-text-color, 0.4);
@@ -122,14 +124,23 @@ section::after {
     li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
         color: $cat-text-color;
     }
-}
-section.invert-bg {
-    li:not([data-bespoke-marp-current-fragment="current"]) {
-        color: rgba($cat-text-color-invert, 0.4);
+    .code-line li {
+        color: $cat-text-color !important;
     }
-    li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
-        color: $cat-text-color-invert;
+    section.invert-bg {
+        li {
+            color: $cat-text-color-invert;
+        }
+        li:not([data-bespoke-marp-current-fragment="current"]) {
+            color: rgba($cat-text-color-invert, 0.4);
+        }
+        li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
+            color: $cat-text-color-invert;
+        }
     }
+    .code-line section.invert-bg li {
+        color: $cat-text-color-invert !important;
+    } 
 }
 
 // animation templates

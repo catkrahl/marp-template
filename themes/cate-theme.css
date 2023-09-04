@@ -96,11 +96,22 @@ li:not([data-bespoke-marp-current-fragment=current]) > ul > li[data-bespoke-marp
   color: #444;
 }
 
+.code-line li {
+  color: #444 !important;
+}
+
+section.invert-bg li {
+  color: #ffffff;
+}
 section.invert-bg li:not([data-bespoke-marp-current-fragment=current]) {
   color: rgba(255, 255, 255, 0.4);
 }
 section.invert-bg li:not([data-bespoke-marp-current-fragment=current]) > ul > li[data-bespoke-marp-current-fragment=current] {
   color: #ffffff;
+}
+
+.code-line section.invert-bg li {
+  color: #ffffff !important;
 }
 
 @keyframes fade-in {
