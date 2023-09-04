@@ -123,3 +123,63 @@ public function getRows(
 Images can be resized:
 
 ![w:600](example-img/screenshot_item.png)
+
+---
+
+<!-- _class: invert-bg -->
+
+# A cozy dark version of a content slide
+
+* for a cozy darkmode feel
+* also perfect for dark images as backgrounds
+
+---
+
+<!-- _class: invert-bg -->
+
+![bg](example-img/pexels-stein-egil-liland-3374210.jpg)
+
+# A cozy dark version of a content slide
+
+* for a cozy darkmode feel
+* also perfect for dark images as backgrounds
+
+---
+
+<!-- _class: title-02 -->
+
+## **Just as an alternative cover**
+
+# **Here is template title-02 for the purists**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
+<!-- _class: title-02 -->
+
+![bg](./example-img/pexels-bruno-thethe-1910236.jpg)
+
+## **Perfect for background images**
+
+# **Use title-02 to put any background underneath**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
+<!-- _class: title-02--invert-footer -->
+
+![bg](./example-img/pexels-bruno-thethe-1910236.jpg)
+
+## **Backgroudn too dark?**
+
+# **Use title-02--invert-footer to make the footer pop again**
+
+<!-- There should be no paragraph text on this title slide - only one h1 and h2 each.
+
+Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->

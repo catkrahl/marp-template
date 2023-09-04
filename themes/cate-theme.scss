@@ -123,6 +123,14 @@ section::after {
         color: $cat-text-color;
     }
 }
+section.invert-bg {
+    li:not([data-bespoke-marp-current-fragment="current"]) {
+        color: rgba($cat-text-color-invert, 0.4);
+    }
+    li:not([data-bespoke-marp-current-fragment="current"]) > ul > li[data-bespoke-marp-current-fragment="current"] {
+        color: $cat-text-color-invert;
+    }
+}
 
 // animation templates
 
@@ -218,13 +226,14 @@ section.chapter-02 {
 
 section.chapter-01,
 section.chapter-02,
-section.title-01 {
+section.title-01,
+section.invert-bg {
     @include invert-text-color()
 }
 
 // these slides can optionally have white text in header/footer (e.g. with a dark bg image)
 
-section.title-02--white-text {
+section.title-02--invert-footer {
     @include invert-footer-header-color()
 }
 
@@ -255,6 +264,10 @@ section.chapter-02 {
         background-color: rgba($cat-bg-color, .2);
         color: $cat-text-color-invert;
     }
+}
+
+section.invert-bg {
+    --color-canvas-default: #{$cat-darkgray};
 }
 
 //
