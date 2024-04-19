@@ -24,20 +24,44 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 
 ---
 
-*People don't care about you or your products. 
-They just care about their own problems."*  
+### Was habe ich NICHT vor?
 
-David Meerman Scott
+* keinen akademischen Vortrag halten
+* kein Referat von pseudo-hippen Marketing-Trends
+* keine ICP-Analysen oder Lead-Nuturing-Modelle propagieren
+<!-- ICP: ideal customer profile Lead Nuturing: alle Schritte im Rahmen eines Lead Management Prozesses, die ein Unternehmen unternimmt, um Interessenten zur richtigen Zeit mit den für sie relevanten Informationen anzusprechen -->
+* komplette Übersicht über das Thema geben
+* auf Anglizismen verzichten (können)
 
 ---
 
-### Wozu Marketing?
+### Was habe ich vor?
+
+* warum Marketing?
+* kurze Methodenübersicht
+* Inbound Marketing als systematisch-strukturierte Vorgehensweise vorstellen
+* spezielle Stategien zeigen, die auch kleineren Unternehmen mit wenig Budget helfen
+* wie Verkaufsprozesse sinnvoll unterstützt werden können
+* orientiert an unserem Status Quo und Möglichkeiten bei CaT
+* ein wenig Marketing-Sprech einführen
+
+---
+
+*People don't care about you or your products. 
+They just care about their own problems."*  
+<!-- Menschen sind nicht an dir oder deinen Produkten interessiert, sie kümmern sich nur um ihre Probleme-->
+
+*David Meerman Scott*
+*(Online Marketing Stratege, Speaker, Autor)*
+
+---
+
+### Warum Marketing?
 
 * Aufmerksamkeit für ein Produkt oder eine Dienstleistung wecken
 * das Informationsbedürfnis von potentiellen Kunden erfüllen
-* Kontakte herstellen und filtern, die in potentielles Kaufinteresse haben
-* Schnittstelle zum Vertrieb
-
+* Kontakte generieren und qualifizieren
+* Teildisziplin des Verkaufprozesses
 
 ---
 
@@ -51,9 +75,9 @@ David Meerman Scott
 
 ### Cold Outreach
 
-* gekaufte od. gesammelte Kontaktadressen von potentiellen Kunden werden per Telefon oder Email kontaktiert
-* u. U. hohe Reichweite, aber sehr geringe Trefferquote von sales-qualified Leads
-* interruptive
+* potentielle Kunden oder Branchen werden über gekaufte od. gesammelte Kontaktadressen per Post, Telefon oder Email kontaktiert
+* hohe Reichweite, aber durch breite Streuung u. U. sehr geringe Trefferquote von sales-qualified Leads
+* interruptive, Kontaktpersonen werden "gestört"
 * push-Prinzip
 
 ---
@@ -62,76 +86,121 @@ David Meerman Scott
 
 * gekaufte Werbung auf digitalen Plattformen (Google, Social Media, Youtube)
 * resourcenintensiv, weil teuer 
-* hohe Reichweite, aber geringe Trefferquote
+* hohe Reichweite, aber u. U. geringe Trefferquote
 
 ---
 
 ### Inbound Marketing
 
-* eigene Website oder andere digitale Plattformen ziehen durch gute, hilfreiche Inhalte potentielle Kunden an
-* imagefördernd
+* Websites oder andere digitale Plattformen erreichen potentielle Kunden über qualitativ hochwertige und hilfreiche Inhalte
+  *"People don't care about you or your products. They just care about their own problems."*
+* imagefördernd, 
 * langfristig und nachhaltig erfolgreich
 * Multiplikatoreffekt
 * pull-Prinzip
 
 ---
 
-### Inbound- vs. Outbound-Marketing
-
-* was steht hinter den beiden Konzepten?
-* wo unterscheiden sie sich?
-* wofür eignet sich welche Modell am besten?
-
----
-
 <!-- _class: chapter-01 -->
 
-### **Methoden**
-
 ## **Inbound Marketing**
+
+### **Im Detail**
 
 <!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
 
 ---
 
-### "they ask you answer"-Prinzip
+![bg right fit](img/flywheel.png)
+### Leads generieren und qualifizieren
 
-* potentielle Kunden begeben sich im Internet auf die Suche nach einer Lösung für eine Problemstellung
-* über Websites, Blogs, Soical Media Posts finden sie Lösungsansätze zu ihrer Problemstellung
-* 
+* Businesskontakt der (im Idealfall) vom ersten Besuch der Website bis zum Kaufabschluss in seiner Customer Journey begleitet wird (Lead Nuturing)
+* attract - engage - delight - Prinzip
+* Marketing-qualified Leads
+* Sales-qualified Leads
+
+
 
 ---
 
-### Leads generieren
+### Grundprinzipien
 
-* Businesskontakt der bis zum Kaufabschluss in der Customer Journey begleitet wird
-* attract - engage - delight - Prinzip (kennen wir aus der CaT-Vergangeheit bereits)
-* Marketing-qualified Leads
-* Sales-qualified Leads 
+* über suchmaschinenoptimierten (SEO) hochwertigen Content gelangen möglichst viele Personen auf eine Website und konsumieren Inhalte (Onlineartikel od. Blogbeiträge -> CaT-/cate-Storys)
+
+* der Content ist nicht werblich, sondern bietet nützliche Informationen, mit denen Kunden in vielen Fällen sogar selbstständig ein Problem lösen könnten.
+
+* Unternehmen gewinnen so an Vertrauen und positionieren sich als Experte in ihrer Branche
+
+---
+
+### "they ask - you answer"-Prinzip
+
+* potentielle Kunden begeben sich im Internet auf die Suche nach Informationen zur Lösung eines Problems
+* über Websites, Blogs, Social Media Posts finden sie Informationen über Lösungsansätze
+* welche Suchanfragen könnten gestellt werden?
+* wie weit fortgeschritten ist die Customer Journey?
+* welche Themen stehen ganz am Anfang, welche Fragen werden kurz vor einer Vertragsverhandlung gestellt
 
 ---
 
 ### Top-of-the-funnel-Content vs. Bottom-of-the-funnel-Content
 
-* Kosten
-* they ask you answer
-* Probleme
-* Vergleiche /Bestenlisten
-* Rezensionen ()
-* Zielgruppe hat schon sehr viel vorrecherchiert
-* low-competition
-
+* Content-Produktion braucht viel Ressourcen
+* teuer und zeitintensiv
+* Whitepaper vs. special interest-Themen
+* high volume vs. low-competition-Themen
+* hohe conversion-rate möglich
+* Zielgruppe hat schon sehr viel vorrecherchiert und bekommt sehr spezielle Inhalte und Themen präsentiert
 
 ---
 
-![bg right fit](img/sales-funnel.png)
+![w:900](img/sales-funnel.png)
 
-<!-- The "fit" parameter makes the background fit inside of the slide -->
-### A slide next to an image
+---
 
-It could be 
+### was braucht Inbound Marketing?
+* nicht quantitativ-hohe Besucherzahlen, sondern qualitative Kontakte (MQL)
+* im Idealfall Personen mit Kaufinteresse als sales qualified Leads (SQL)
+* Contentstrategie
+* Content Manager
+* Cluster Content
+* Pillar Pages
 
-* an impressive screenshot there
-* a hilarious meme
-* or a picture of a cute and cuddly kitten, because why not
+---
+
+<!-- _class: chapter-01 -->
+
+## **Resumee**
+
+<!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
+---
+
+### Inbound Marketing 
+
+* they ask - you answer-Prinzip als Leitbild
+* nicht manipulativ, sondern an Lösungen orientiert
+* werblichen Content vermeiden
+* fachliche Expertise aufbauen und stärken
+* längerfristig angelegte Content-Strategie
+* Konzentration auf "bottom-of-the-funnel"-Themen
+
+---
+
+### was haben wir davon?
+* ein klares und strukturiertes Verständnis des Bereichs
+* Messbarkeit der Wirksamkeit
+* Unterstützung für den gesamten Verkaufsprozess
+* Verbesserung der Sichtbarkeit
+* besseres Renommee
+
+---
+
+
+<!-- _class: chapter-01 -->
+
+## **Diskussion**
+
+<!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
+
 

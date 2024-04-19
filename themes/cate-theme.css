@@ -88,10 +88,6 @@ section::after {
   right: 30px;
 }
 
-li:not([data-bespoke-marp-current-fragment=current]) {
-  opacity: 0.4;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
