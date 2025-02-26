@@ -8,7 +8,7 @@ This is our **CaT/cate presentation theme** for marp.
 * extract archive
 * copy to local/bin or where your PATH-variable is set to
 * use marp command to compile md-files
-* e.g. 'marp presentation.md --theme-set themes/. --preview'
+* e.g. '''marp presentation.md --theme-set themes/. --preview'''
 
 ## Installation VSCode
 
