@@ -6,12 +6,9 @@ This is our **CaT/cate presentation theme** for marp.
 * visit: https://github.com/marp-team/marp-cli/releases
 * go to archive-Download
 * extract archive
-* copy to local/bin 
-
-We use VSCode and the official marp extension to export the finished presentations.
-
-* Install VSCode from Ubuntu Software (https://snapcraft.io/code)
-* Install the official marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+* copy to local/bin or where your PATH-variable is set to
+* use marp command to compile md-files
+* e.g. _marp presentation.md --theme-set themes/. --preview_
 
 ## Installation VSCode
 
