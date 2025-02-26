@@ -1,5 +1,10 @@
 # Marp Template CaT / cate
 
+## ATTENTION: compiling scss to css 
+* the following two lines are needed in the theme.css
+  * /* @theme cate-theme */
+    @import "default";
+
 This repo bundles our **CaT/cate presentation theme** for marp together with a way to quickly change style code and export a standalone html presentation by controlling the sass compiler and marp cli export through a python script.
 
 ## Making a presentation
