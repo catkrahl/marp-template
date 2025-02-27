@@ -65,7 +65,7 @@ h3 {
 
 h1 strong {
     background-color: $cat-color-1;
-    color: $cat-text-color-invert; 
+    color: $cat-text-color-invert;
     line-height: 3.2rem;
     padding: 0.2rem;
     box-decoration-break: clone;
@@ -141,10 +141,7 @@ section.title-02 {
     &,
     &--white-text {
         h1, h2 {
-            margin-left: -80px;
-        }
-        h1 strong, h2 strong {
-            padding-left: 40px;
+            text-align: center;
         }
     }
 }
@@ -175,17 +172,21 @@ section.chapter-01 {
     footer::before {
         background-image: url(img/logo-invert.png);
     }
-    p
+    p,
     h2,
     h3 {
         color: $cat-text-color-invert;
     }
     h1 strong {
+        border-radius: 5px;
         background-color: rgba($cat-bg-color, .2);
+        padding-inline: 20px;
     }
     h2 strong {
         background-color: rgba($cat-darkgray, .1);
+        border-radius: 5px;
         color: $cat-text-color-invert;
+        padding-inline: 20px;
     }
     h3 strong {
         color: $cat-text-color-invert;
@@ -227,20 +228,29 @@ section.title-02--white-text {
 // SLIDE SPECIFIC STYLES
 //
 
+section.title-01,
+section.chapter-01 {
+    header {
+        display:none;
+    }
+}
+
 section.title-01 {
-    background-image: url(img/title-020_bg.png);
+    background-image: url(img/title-021_bg.png);
     background-size: cover;
 }
 
 section.chapter-01 {
-    background-image: url(img/chapter-010_bg.png);
+    background-image: url(img/chapter-011_bg.png);
     background-size: cover;
     h1, h2, h3 {
         text-align: center;
     }
     h2 strong {
         background-color: rgba($cat-bg-color, .2);
+        border-radius: 5px;
         color: $cat-text-color-invert;
+        padding-inline: 20px;
     }
 }
 

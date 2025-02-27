@@ -3,18 +3,16 @@
 marp: true
 theme: cate-theme
 paginate: false
-header: ILIAS DevConf September 2023
-footer: No ILIAS on a dead planet.
+header: CaT-Webinar: Digitalisierung in KMU
+footer: 
 
 ---
 
 <!-- _class: title-01 -->
 
-## **Optional sub-headline h2 on top**
+## **CaT-Webinar**
 
-# **A very important topic that deserves a wonderful title on the first slide h1**
-
-## **or sub-headline h2 below (but never both)**
+# **Digitalisierung in KMU**
 
 <!-- Comments like this are hidden on the slide, but show up in presenter mode (press P).
 
@@ -34,15 +32,8 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 
 ---
 
-![bg fit](img/fs-img-01.png)
-
-### A slide next to an image
-
-It could be
-
-* an impressive screenshot there
-* a hilarious meme
-* or a picture of a cute and cuddly kitten, because why not
+![bg](img/matrix1111.png)
+<!-- _class: title-02--white-text -->
 
 ---
 

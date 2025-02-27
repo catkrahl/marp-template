@@ -1,5 +1,6 @@
 /* @theme cate-theme */
 @import "default";
+
 @font-face {
   font-family: "Nunito Sans";
   src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
@@ -101,14 +102,7 @@ section.title-02 h1,
 section.title-02 h2,
 section.title-02--white-text h1,
 section.title-02--white-text h2 {
-  margin-left: -80px;
-}
-section.title-01 h1 strong, section.title-01 h2 strong, section.title-01--white-text h1 strong, section.title-01--white-text h2 strong,
-section.title-02 h1 strong,
-section.title-02 h2 strong,
-section.title-02--white-text h1 strong,
-section.title-02--white-text h2 strong {
-  padding-left: 40px;
+  text-align: center;
 }
 
 section.title-01 h1 + h2, section.title-01--white-text h1 + h2,
@@ -130,20 +124,26 @@ section.chapter-01 footer::before,
 section.title-01 footer::before {
   background-image: url(img/logo-invert.png);
 }
-section.chapter-01 p h2,
+section.chapter-01 p,
+section.chapter-01 h2,
 section.chapter-01 h3,
-section.title-01 p h2,
+section.title-01 p,
+section.title-01 h2,
 section.title-01 h3 {
   color: #ffffff;
 }
 section.chapter-01 h1 strong,
 section.title-01 h1 strong {
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
+  padding-inline: 20px;
 }
 section.chapter-01 h2 strong,
 section.title-01 h2 strong {
   background-color: rgba(68, 68, 68, 0.1);
+  border-radius: 5px;
   color: #ffffff;
+  padding-inline: 20px;
 }
 section.chapter-01 h3 strong,
 section.title-01 h3 strong {
@@ -167,13 +167,18 @@ section.title-02--white-text {
   --paginate-color: #ffffff;
 }
 
+section.title-01 header,
+section.chapter-01 header {
+  display: none;
+}
+
 section.title-01 {
-  background-image: url(img/title-020_bg.png);
+  background-image: url(img/title-021_bg.png);
   background-size: cover;
 }
 
 section.chapter-01 {
-  background-image: url(img/chapter-010_bg.png);
+  background-image: url(img/chapter-011_bg.png);
   background-size: cover;
 }
 section.chapter-01 h1, section.chapter-01 h2, section.chapter-01 h3 {
@@ -181,7 +186,9 @@ section.chapter-01 h1, section.chapter-01 h2, section.chapter-01 h3 {
 }
 section.chapter-01 h2 strong {
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
   color: #ffffff;
+  padding-inline: 20px;
 }
 
 /*# sourceMappingURL=cate-theme.css.map */
