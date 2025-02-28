@@ -1,0 +1,191 @@
+/* @theme cat-theme-dark */
+@import "default";
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+  font-weight: 200;
+}
+:root {
+  color: #444;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+}
+
+section {
+  --color-fg-default: #444;
+  --h1-color: #009bea;
+  --header-footer-color: #686868;
+  --heading-strong-color: #444;
+  --paginate-color: #686868;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 200;
+  animation: fade-in 0.5s forwards;
+}
+
+h2, h3 {
+  color: #009bea;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1 strong, h2 strong {
+  background-color: #009bea;
+  color: #ffffff;
+  line-height: 3.2rem;
+  padding: 0.2rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+h2 strong {
+  background-color: #f5f5f5;
+  color: #444;
+  line-height: 2.65rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer {
+  left: 30px;
+  right: 30px;
+  bottom: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer::before {
+  content: " ";
+  background-image: url(img/cat-logo-typo-text-weiss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 165px;
+  height: 30px;
+}
+
+section::after {
+  top: 21px;
+  left: auto;
+  right: 30px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section.title h1, section.title h2, section.title--white-text h1, section.title--white-text h2,
+section.title-02 h1,
+section.title-02 h2,
+section.title-02--white-text h1,
+section.title-02--white-text h2 {
+  text-align: center;
+}
+
+section.title h1 + h2, section.title--white-text h1 + h2,
+section.title-02 h1 + h2,
+section.title-02--white-text h1 + h2,
+section.chapter h1 + h2,
+section.chapter--white-text h1 + h2 {
+  margin-top: -30px;
+}
+section.title h2 + h1, section.title--white-text h2 + h1,
+section.title-02 h2 + h1,
+section.title-02--white-text h2 + h1,
+section.chapter h2 + h1,
+section.chapter--white-text h2 + h1 {
+  margin-top: -30px;
+}
+
+section.chapter footer::before,
+section.title footer::before {
+  background-image: url(img/cat-logo-typo-text-weiss.svg);
+}
+section.chapter p,
+section.chapter h2,
+section.chapter h3,
+section.title p,
+section.title h2,
+section.title h3 {
+  color: #ffffff;
+}
+section.chapter h1 strong,
+section.title h1 strong {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-inline: 20px;
+}
+section.chapter h2 strong,
+section.title h2 strong {
+  background-color: rgba(68, 68, 68, 0.1);
+  border-radius: 5px;
+  color: #ffffff;
+  padding-inline: 20px;
+}
+section.chapter h3 strong,
+section.title h3 strong {
+  color: #ffffff;
+}
+section.chapter,
+section.title {
+  --h1-color: #ffffff;
+  --header-footer-color: #ffffff;
+  --heading-strong-color: #ffffff;
+  --paginate-color: #ffffff;
+}
+
+section.title-02--white-text footer::before {
+  background-image: url(img/cat-logo-typo-text-weiss.svg);
+}
+section.title-02--white-text {
+  --h1-color: #ffffff;
+  --header-footer-color: #ffffff;
+  --heading-strong-color: #ffffff;
+  --paginate-color: #ffffff;
+}
+
+section.title header,
+section.chapter header {
+  display: none;
+}
+
+section.title {
+  background-image: url(img/title-bg-gradient.png);
+  background-size: cover;
+}
+
+section.chapter {
+  background-image: url(img/chapter-bg-dark.png);
+  background-size: cover;
+}
+section.chapter h1, section.chapter h2, section.chapter h3 {
+  text-align: center;
+}
+section.chapter h2 strong {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #ffffff;
+  padding-inline: 20px;
+}
+
+/*# sourceMappingURL=cat-theme-dark.css.map */

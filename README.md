@@ -2,7 +2,7 @@
 
 ## ATTENTION: compiling scss to css 
 * the following two lines are needed in the theme.css
-  * /* @theme cate-theme */
+  * /* @theme cat-theme-dark */
     @import "default";
 
 This repo bundles our **CaT/cate presentation theme** for marp together with a way to quickly change style code and export a standalone html presentation by controlling the sass compiler and marp cli export through a python script.

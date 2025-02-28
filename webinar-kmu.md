@@ -1,14 +1,14 @@
 ---
 
 marp: true
-theme: cate-theme
+theme: cat-theme-dark
 paginate: false
 header: CaT-Webinar: Digitalisierung in KMU
-footer: 
+footer:  ...
 
 ---
 
-<!-- _class: title-01 -->
+<!-- _class: title -->
 
 ## **CaT-Webinar**
 
@@ -22,18 +22,18 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 
 ---
 
-<!-- _class: chapter-01 -->
+<!-- _class: chapter -->
 
-### **Optional Chapter Sub-Headline**
+### **Teil 1:**
 
-## **The title for this section of the presentation**
+## **Die Digitaliserungsmatrix**
 
 <!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
 
 ---
 
 ![bg](img/matrix1111.png)
-<!-- _class: title-02--white-text -->
+<!-- _class: chapter -->
 
 ---
 
