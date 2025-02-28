@@ -36,6 +36,8 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 <!-- _class: chapter -->
 
 ---
+![bg](img/text-box.png)
+<!-- _class: textbox -->
 
 ### An interesting thing to talk about
 

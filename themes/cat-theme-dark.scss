@@ -19,7 +19,7 @@ $cat-color-6: #4a154b;
 $cat-darkgray: #444;
 $cat-midgray: #686868;
 $cat-lightgray: #f5f5f5;
-$cat-bg-color: #ffffff;
+$cat-bg-color: #5e5e5e;
 $cat-bg-color-1: #f4f4f4;
 $cat-bg-color-2: $cat-color-2;
 $cat-bg-dark-blue: #1A1D2D;
@@ -47,37 +47,27 @@ h1, h2, h3, h4, h5, p {
     animation: fade-in .5s forwards;
 }
 
-h2, h3 {
-    color: $cat-color-1;
-}
+h2, h3 { color: $cat-color-1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
 
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-}
-
-h1,h2 {
-    strong {
-        background-color: $cat-color-1;
-        color: $cat-text-color-invert;
-        line-height: 3.2rem;
-        padding: 0.2rem;
-        box-decoration-break: clone;
-        -webkit-box-decoration-break: clone;
-    }
+h1 strong {
+    background-color: $cat-color-1;
+    color: $cat-text-color-invert;
+    line-height: 3.2rem;
+    padding: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 h2 strong {
     background-color: $cat-lightgray;
     color: $cat-text-color;
     line-height: 2.65rem;
+    padding: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 header {
@@ -239,10 +229,14 @@ section.title {
     background-size: cover;
 }
 
-section.chapter {
+section.chapter,
+section.textbox {
     background-image: url(img/chapter-bg-dark.png);
     background-size: cover;
-    h1, h2, h3 {
+}
+
+section.chapter {
+    h1, h2,h3 {
         text-align: center;
     }
     h2 strong {
@@ -251,5 +245,9 @@ section.chapter {
         color: $cat-text-color-invert;
         padding-inline: 20px;
     }
+}
+
+section.textbox figure {
+    opacity: .1 !important;
 }
 
