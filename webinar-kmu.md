@@ -3,8 +3,8 @@
 marp: true
 theme: cat-theme-dark
 paginate: false
-header: CaT-Webinar: Digitalisierung in KMU
-footer:  ...
+header: 
+footer: CaT-Webinar: Digitalisierung in KMU
 
 ---
 
@@ -26,16 +26,65 @@ Keep the headlines inside the `**` bold markdown - it's important for the css co
 
 ### **Teil 1:**
 
-## **Die Digitaliserungsmatrix**
+## **Die Digitalisierungsmatrix**
 
 <!-- Keep the headlines inside the `**` bold markdown - it's important for the css code of this slide type to work. -->
 
 ---
 
-![bg](img/matrix1111.png)
+![bg](img/matrix01.png)
 <!-- _class: chapter -->
 
 ---
+
+![bg](img/matrix02.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix03.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix04.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix05.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix06.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix07.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix08.png)
+<!-- _class: chapter -->
+
+---
+
+![bg](img/matrix09.png)
+<!-- _class: chapter -->
+
+---
+
+### **An interesting thing to talk about**
+
+* with this very important point to consider
+* and here is another one that needs a couple lines of text to really make clear what it is all about and why whe whould consider this
+* three bullet points is a good amount of bullet points for a slide
+
+---
+
 ![bg](img/text-box.png)
 <!-- _class: textbox -->
 
@@ -72,7 +121,7 @@ It could be
 
 ---
 
-# A slide with some code on it
+## A slide with some code on it
 
 ```php
 public function getRows(
@@ -87,7 +136,7 @@ public function getRows(
 
 ---
 
-# Images inline on the slide
+## Images inline on the slide
 
 ![](example-img/screenshot_item.png)
 

@@ -7,26 +7,23 @@
   font-weight: 200;
 }
 :root {
-  color: #444;
+  color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
 }
 
 section {
-  --color-fg-default: #444;
+  --bgColor-default: #5e5e5e;
+  --color-fg-default: #ffffff;
   --h1-color: #009bea;
-  --header-footer-color: #686868;
-  --heading-strong-color: #444;
+  --header-footer-color: #bbbbbb;
+  --heading-strong-color: #ffffff;
   --paginate-color: #686868;
 }
 
 h1, h2, h3, h4, h5, p {
   font-weight: 200;
   animation: fade-in 0.5s forwards;
-}
-
-h2, h3 {
-  color: #009bea;
 }
 
 h1 {
@@ -41,22 +38,30 @@ h3 {
   font-size: 1.2rem;
 }
 
-h1 strong {
-  background-color: #009bea;
+h1 strong, h2 strong, h3 strong {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
   color: #ffffff;
-  line-height: 3.2rem;
-  padding: 0.2rem;
+  padding-inline: 20px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
+h1 strong {
+  line-height: 3.2rem;
+}
+
 h2 strong {
-  background-color: #f5f5f5;
-  color: #444;
   line-height: 2.65rem;
-  padding: 0.2rem;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+}
+
+h3 strong,
+section.chapter h2 strong {
+  background-color: #009bea;
+}
+
+section.chapter h3 strong {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 header {
@@ -66,6 +71,7 @@ header {
 }
 
 footer {
+  color: transparent;
   left: 30px;
   right: 30px;
   bottom: 21px;
@@ -79,6 +85,7 @@ footer::before {
   background-image: url(img/cat-logo-typo-text-weiss.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.5;
   width: 165px;
   height: 30px;
 }
@@ -97,74 +104,19 @@ section::after {
     opacity: 1;
   }
 }
-section.title h1, section.title h2, section.title--white-text h1, section.title--white-text h2,
-section.title-02 h1,
-section.title-02 h2,
-section.title-02--white-text h1,
-section.title-02--white-text h2 {
+section.title h1, section.title h2, section.title--white-text h1, section.title--white-text h2 {
   text-align: center;
 }
 
 section.title h1 + h2, section.title--white-text h1 + h2,
-section.title-02 h1 + h2,
-section.title-02--white-text h1 + h2,
 section.chapter h1 + h2,
 section.chapter--white-text h1 + h2 {
   margin-top: -30px;
 }
 section.title h2 + h1, section.title--white-text h2 + h1,
-section.title-02 h2 + h1,
-section.title-02--white-text h2 + h1,
 section.chapter h2 + h1,
 section.chapter--white-text h2 + h1 {
   margin-top: -30px;
-}
-
-section.chapter footer::before,
-section.title footer::before {
-  background-image: url(img/cat-logo-typo-text-weiss.svg);
-}
-section.chapter p,
-section.chapter h2,
-section.chapter h3,
-section.title p,
-section.title h2,
-section.title h3 {
-  color: #ffffff;
-}
-section.chapter h1 strong,
-section.title h1 strong {
-  border-radius: 5px;
-  background-color: rgba(94, 94, 94, 0.2);
-  padding-inline: 20px;
-}
-section.chapter h2 strong,
-section.title h2 strong {
-  background-color: rgba(68, 68, 68, 0.1);
-  border-radius: 5px;
-  color: #ffffff;
-  padding-inline: 20px;
-}
-section.chapter h3 strong,
-section.title h3 strong {
-  color: #ffffff;
-}
-section.chapter,
-section.title {
-  --h1-color: #ffffff;
-  --header-footer-color: #ffffff;
-  --heading-strong-color: #ffffff;
-  --paginate-color: #ffffff;
-}
-
-section.title-02--white-text footer::before {
-  background-image: url(img/cat-logo-typo-text-weiss.svg);
-}
-section.title-02--white-text {
-  --h1-color: #ffffff;
-  --header-footer-color: #ffffff;
-  --heading-strong-color: #ffffff;
-  --paginate-color: #ffffff;
 }
 
 section.title header,
@@ -185,12 +137,6 @@ section.textbox {
 
 section.chapter h1, section.chapter h2, section.chapter h3 {
   text-align: center;
-}
-section.chapter h2 strong {
-  background-color: rgba(94, 94, 94, 0.2);
-  border-radius: 5px;
-  color: #ffffff;
-  padding-inline: 20px;
 }
 
 section.textbox figure {
