@@ -7,7 +7,7 @@ $logo-size: (330px, 60px); // we half this later so icons stay sharp when 1280x7
 @font-face {
     font-family: "Nunito Sans";
     src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
-    font-weight: 200;
+    font-weight: 200 900;
   }
 
 $cat-color-1: #009bea;
@@ -31,6 +31,7 @@ $cat-text-color-lightgray: #bbbbbb;
     color: $cat-text-color;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 200;
+    font-size: 25px;
 }
 
 section {
@@ -46,7 +47,11 @@ section {
 
 h1, h2, h3, h4, h5, p {
     font-weight: 200;
-    animation: fade-in .5s forwards;
+    animation: fade-in .9s forwards;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
 }
 
 h1 { font-size: 2rem; }
@@ -56,8 +61,8 @@ h3 { font-size: 1.2rem; }
 h1, h2, h3 {
     strong {
         background-color: rgba($cat-bg-color, .2);
-        border-radius: 5px;
         color: $cat-text-color-invert;
+        font-weight: 200;
         padding-inline: 20px;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
@@ -72,13 +77,28 @@ h2 strong {
     line-height: 2.65rem;
 }
 
-h3 strong,
+h2 strong,
 section.chapter h2 strong {
     background-color: $cat-color-1;
 }
 
+h3 strong,
 section.chapter h3 strong {
     background-color: rgba($cat-bg-color, .2);
+}
+
+/* links */
+a {
+    background-color: $cat-color-1;
+    color: $cat-text-color-invert;
+    text-decoration: none;
+    padding-inline: 10px;
+    &:hover {
+        display: inline-block;
+        transform: scale(1.03);
+        transition: all ease-in 300ms;
+        text-decoration: none;
+    }
 }
 
 header {
@@ -141,7 +161,7 @@ section::after {
 section.title {
     &,
     &--white-text {
-        h1, h2 {
+        h1, h2, h3 {
             text-align: center;
         }
     }
@@ -155,11 +175,23 @@ section.title,
 section.chapter {
     &,
     &--white-text {
-        h1 + h2 {
+        h1 + h2,
+        h1 + h3,
+        h2 + h3 {
             margin-top: -30px;
         }
-        h2 + h1 {
-            margin-top: -30px;
+        h2 + h1,
+        h3 + h1 {
+            margin-top: -39px;
+        }
+    }
+}
+
+section.title,
+section.chapter {
+    & {
+        h3 + h2 {
+            margin-top: -19px;
         }
     }
 }
@@ -177,7 +209,8 @@ section.title {
 }
 
 section.chapter,
-section.textbox {
+section.textbox,
+section.page-bg {
     background-image: url(img/chapter-bg-dark.png);
     background-size: cover;
 }

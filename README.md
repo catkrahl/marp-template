@@ -1,7 +1,10 @@
 # Marp Template CaT / cate
 
+## Shortcut CLI
+* CLI: marp $name-of-presentation.md --theme-set themes/.
+
 ## ATTENTION: compiling scss to css 
-* the following two lines are needed in the theme.css
+* after compiling from scss to css the following two lines are needed in the theme.css
   * /* @theme cat-theme-dark */
     @import "default";
 
