@@ -162,14 +162,14 @@ section.chapter header {
 }
 
 section.title {
-  background-image: url(img/title-bg-gradient.png);
+  background-image: url(img/bg-cat-gradient.png);
   background-size: cover;
 }
 
 section.chapter,
 section.textbox,
 section.page-bg {
-  background-image: url(img/chapter-bg-dark.png);
+  background-image: url(img/bg-cat-gray.png);
   background-size: cover;
 }
 
