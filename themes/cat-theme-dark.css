@@ -6,6 +6,8 @@
   src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
   font-weight: 200 900;
 }
+/* cate colors */
+/* CaT colors */
 :root {
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
@@ -70,6 +72,12 @@ section.chapter h3 strong {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* cate title and chapter typo bg-color */
+section.cate h2 strong,
+section.chapter.cate h2 strong {
+  background-color: #c71ea6;
+}
+
 /* links */
 a {
   background-color: #009bea;
@@ -82,6 +90,10 @@ a:hover {
   transform: scale(1.03);
   transition: all ease-in 300ms;
   text-decoration: none;
+}
+
+section.cate a {
+  background-color: #fdb400;
 }
 
 header {
@@ -167,16 +179,23 @@ section.chapter header {
   display: none;
 }
 
-section.title {
+section.title.cat,
+section.title.cate {
   background-image: url(img/bg-cat-gradient.png);
   background-size: cover;
 }
 
-section.chapter,
-section.textbox,
-section.page-bg {
+section.title.cate {
+  background-image: url(img/bg-cate-gradient.png);
+}
+section.chapter.cat,
+section.chapter.cate {
   background-image: url(img/bg-cat-gray.png);
   background-size: cover;
+}
+
+section.chapter.cate {
+  background-image: url(img/bg-cate-gray.png);
 }
 
 section.chapter h1, section.chapter h2, section.chapter h3 {

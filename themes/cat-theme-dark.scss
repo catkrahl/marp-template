@@ -10,6 +10,12 @@ $logo-size: (330px, 60px); // we half this later so icons stay sharp when 1280x7
     font-weight: 200 900;
   }
 
+/* cate colors */
+$cate-color-1: #c71ea6;
+$cate-color-2: #fdb400;
+$cate-color-3: #ce1970;
+$cate-color-4: #ec4016;
+/* CaT colors */
 $cat-color-1: #009bea;
 $cat-color-2: #c1d31c;
 $cat-color-3: #89d37e;
@@ -87,6 +93,12 @@ section.chapter h3 strong {
     background-color: rgba($cat-bg-color, .2);
 }
 
+/* cate title and chapter typo bg-color */
+section.cate h2 strong,
+section.chapter.cate h2 strong {
+    background-color: $cate-color-1;
+}
+
 /* links */
 a {
     background-color: $cat-color-1;
@@ -99,6 +111,10 @@ a {
         transition: all ease-in 300ms;
         text-decoration: none;
     }
+}
+
+section.cate a {
+    background-color: $cate-color-2;
 }
 
 header {
@@ -209,16 +225,27 @@ section.chapter {
     }
 }
 
-section.title {
+section.title.cat,
+section.title.cate {
     background-image: url(img/bg-cat-gradient.png);
     background-size: cover;
 }
 
-section.chapter,
-section.textbox,
-section.page-bg {
+section.title.cate {
+    background-image: url(img/bg-cate-gradient.png);
+    h1 {
+
+    }
+}
+
+section.chapter.cat,
+section.chapter.cate {
     background-image: url(img/bg-cat-gray.png);
     background-size: cover;
+}
+
+section.chapter.cate {
+    background-image: url(img/bg-cate-gray.png);
 }
 
 section.chapter {

@@ -8,17 +8,31 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-<!-- _class: title -->
+<!-- _class: title cat -->
 
 ## **Dark Theme**
 
-# **Markdown Template**
+# **CaT Title Slide Template**
 
 ---
 
-<!-- _class: chapter -->
-### **33/66 Aufteilung**
-## **Spalte/Inhalt**
+<!-- _class: title cate -->
+
+## **Dark Theme**
+
+# **cate Title Slide Template**
+
+---
+
+<!-- _class: chapter cat-->
+### **CaT**
+## **Kapitel Slide Template**
+
+---
+
+<!-- _class: chapter cate-->
+### **cate**
+## **Kapitel Slide Template**
 
 ---
 
@@ -54,7 +68,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-<!-- _class: chapter -->
+<!-- _class: chapter cat-->
 ### **50/50 Aufteilung**
 ## **Spalte/Inhalt**
 
@@ -92,7 +106,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-<!-- _class: chapter -->
+<!-- _class: chapter cate -->
 
 ## **Bildverwendung**
 
@@ -108,17 +122,18 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/cate_onboard01.png)
-<!-- _class: chapter -->
+![bg](img/img-template100.png)
+<!-- _class: chapter cate -->
 
 ---
 
-![bg left:50%](img/bg-cat-col33.png)
-### Zeit für Fragen
+![bg left:50%](img/bg-cate-col33.png)
+### Fragen?
 
 ---
 
-![bg right:33%](img/bg-cat-col33.png)
+<!-- _class: cate -->
+![bg right:33%](img/bg-cate-col33.png)
 
 ### Kontakt
 richard.klees@concepts-and-training.de
@@ -131,8 +146,14 @@ https://concepts-and-training.de
 
 ---
 
-<!-- _class: chapter -->
-### **Viele Wege führen nach Rom.**
+<!-- _class: cat -->
+![bg right:33%](img/bg-cat-col33.png)
 
-## **Digitalisierung für KMU**
+### Kontakt
+richard.klees@concepts-and-training.de
+</br>
 
+### Weitere Informationen finden Sie hier:
+
+https://cate-lms.de
+https://concepts-and-training.de

@@ -119,8 +119,6 @@ section::after {
 
 // li bullet points fade effect
 
-
-
 @if $fade-inactive-bullets-to-gray {
     li:not([data-bespoke-marp-current-fragment="current"]) {
         color: rgba($cat-text-color, 0.4);
