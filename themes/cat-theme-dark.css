@@ -1,0 +1,190 @@
+/* @theme cat-theme-dark */
+@import "default";
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+  font-weight: 200 900;
+}
+:root {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+section {
+  --bgColor-default: #5e5e5e;
+  --color-fg-default: #ffffff;
+  --h1-color: #009bea;
+  --header-footer-color: #bbbbbb;
+  --heading-strong-color: #ffffff;
+  --paginate-color: #686868;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: 200;
+  animation: fade-in 0.9s forwards;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1 strong, h2 strong, h3 strong {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 200;
+  padding-inline: 20px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+h1 strong {
+  line-height: 3.2rem;
+}
+
+h2 strong {
+  line-height: 2.65rem;
+}
+
+h2 strong,
+section.chapter h2 strong {
+  background-color: #009bea;
+}
+
+h3 strong,
+section.chapter h3 strong {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* links */
+a {
+  background-color: #009bea;
+  color: #ffffff;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+a:hover {
+  display: inline-block;
+  transform: scale(1.03);
+  transition: all ease-in 300ms;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer {
+  color: transparent;
+  left: 30px;
+  right: 30px;
+  bottom: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer::before,
+footer::after {
+  content: " ";
+  background-image: url(img/cat-logo-typo-text-weiss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  width: 165px;
+  height: 30px;
+}
+
+footer::after {
+  background-image: url(img/cate-logo-weiss.svg);
+  width: 90px;
+}
+
+section::after {
+  top: 21px;
+  left: auto;
+  right: 30px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section.title h1, section.title h2, section.title h3, section.title--white-text h1, section.title--white-text h2, section.title--white-text h3 {
+  text-align: center;
+}
+
+section.title h1 + h2,
+section.title h1 + h3,
+section.title h2 + h3, section.title--white-text h1 + h2,
+section.title--white-text h1 + h3,
+section.title--white-text h2 + h3,
+section.chapter h1 + h2,
+section.chapter h1 + h3,
+section.chapter h2 + h3,
+section.chapter--white-text h1 + h2,
+section.chapter--white-text h1 + h3,
+section.chapter--white-text h2 + h3 {
+  margin-top: -30px;
+}
+section.title h2 + h1,
+section.title h3 + h1, section.title--white-text h2 + h1,
+section.title--white-text h3 + h1,
+section.chapter h2 + h1,
+section.chapter h3 + h1,
+section.chapter--white-text h2 + h1,
+section.chapter--white-text h3 + h1 {
+  margin-top: -39px;
+}
+
+section.title h3 + h2,
+section.chapter h3 + h2 {
+  margin-top: -19px;
+}
+
+section.title header,
+section.chapter header {
+  display: none;
+}
+
+section.title {
+  background-image: url(img/bg-cat-gradient.png);
+  background-size: cover;
+}
+
+section.chapter,
+section.textbox,
+section.page-bg {
+  background-image: url(img/bg-cat-gray.png);
+  background-size: cover;
+}
+
+section.chapter h1, section.chapter h2, section.chapter h3 {
+  text-align: center;
+}
+
+section.textbox figure {
+  opacity: 0.1 !important;
+}
+
+/*# sourceMappingURL=cat-theme-dark.css.map */

@@ -1,50 +1,16 @@
 # Marp Template CaT / cate
 
-This is our **CaT/cate presentation theme** for marp.
+## Shortcut CLI
+* CLI: marp $name-of-presentation.md --theme-set themes/.
 
-## Installation Standalone binary CLI-tool
-* visit: https://github.com/marp-team/marp-cli/releases
-* go to archive-Download
-* extract archive
-* copy to local/bin or where your PATH-variable is set to
-* use marp command to compile md-files
-* example with preview:
-```marp presentation.md --theme-set themes/. --preview```
+## ATTENTION: compiling scss to css 
+* after compiling from scss to css the following two lines are needed in the theme.css
+  * /* @theme cat-theme-dark */
+    @import "default";
 
-## Installation VSCode
-
-We use VSCode and the official marp extension to export the finished presentations.
-
-* Install VSCode from Ubuntu Software (https://snapcraft.io/code)
-* Install the official marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
-
-You can write your presentation in any text editor you would like. However, VSCode does offer a nice live preview that you can access by clicking the preview icon in the top right corner or press Ctrl + K, then V.
-
-![Marp Preview in VSCode](example-img/vscode-marp_preview.png)
-
-## Set up for your own presentation
-
-Fork and branch this repo and use example.md as a base for your next presentation. You need to keep themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
-
-## Export as html file
-
-You can export your presentation as static HTML that no longer needs VSCode running by clicking on the marp icon in the top left corner or by opening VSCode's command palette with Ctrl + P and start typing ">Marp: Export Slide Deck...".
-
-![Marp Export in VSCode](example-img/vscode-marp_export.png)
-
-In the following dialog select HTML as the export format. Make sure the file name also has .html in the name and not .pdf.
-
-If you distribute or upload the presentation, you need to keep the html file and the folders img/ and fonts/ inside the same location.
-
-## Export as pdf file
-
-PDF export works basically the same as exporting HTML.
-
-If you get an error message while exporting PDF, you can make an HTML export instead, open it in the browser, start printing with Ctrl + P and choose "Save as PDF". The PDF is of course completely standalone and doesn't require any other files.
+This repo bundles our **CaT/cate presentation theme** for marp together with a way to quickly change style code and export a standalone html presentation by controlling the sass compiler and marp cli export through a python script.
 
 ## Making a presentation
-
-You can find a complete overview of the marp specific markdown syntax in the official documentation: https://marpit.marp.app/markdown
 
 ### Front Matter
 
@@ -58,7 +24,7 @@ Header, footer and pagination can be set to your liking.
 marp: true
 theme: cate-theme
 paginate: false
-header: ILIAS DevConf September 2023 | cate-tms.de
+header: ILIAS DevConf September 2023
 footer: No ILIAS on a dead planet.
 
 ---
@@ -112,33 +78,40 @@ The underscore in `_class` scopes this template style for this current slide onl
 
 See example.md for some example code of how to deal with images.
 
-If you add more images you may want to place them in the img/ folder. This way you can grab them together with the logo files that are already stored there when you distribute the presentation.
+If you add more images you may want to place them in img/.
 
-Background images should be at least 1080 px high to not look pixelated. However, an image that is 720 px high will already fill 100% height of the slide as marp assumes a coordinate system of 1280 x 720 units.
+### Live Preview
 
-All information for how to deal with images both inline and for the slide background can be found in the marp documentation: https://marpit.marp.app/image-syntax
+You can use Visual Studio Code (https://snapcraft.io/code) and the marp extension (https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) to get a live preview while you edit your presentation.
 
-## (Re-)compiling the theme
+You can branch this repo as a basis, because you need themes/, img/, fonts/, .vscode/ and their contents for the cate-theme to work.
 
-You can use the Python script `compile-sass.py` to compile the theme's style code. This is usually only necessary if you changed the scss file or want to change one of the preset flags.
+## Compiling and exporting in Ubuntu
 
-The script assumes that you have dart-sass installed from the Ubuntu software snap store.
+Python3 should already be pre-installed on Ubuntu.
+
+**You need to download and unzip the following dependencies:**
+* Dart SASS: https://github.com/sass/dart-sass/releases
+* Marp CLI: https://github.com/marp-team/marp-cli/releases
+
+**And make the program files available through PATH variables to be called with 'sass' and 'marp' respectively from the terminal** e.g. by placing them in or linking to them from ~/.local/bin (just the local user) or usr/local/bin (all users).
+
+Then you can use the Python script `compile-sass-and-export-marp.py` to both refresh the style code and to export a html version of the presentation.
 
 Compiling themes/cate-theme.scss without using the script is not recommended as the css needs a line attached to the beginning to work in marp.
 
-From inside this folder, you can call the script like this:
-
 ```bash
-python3 compile-sass.py
+python3 compile-sass-and-export-marp.py
 ```
 
-You will be prompted to set the following flag:
-* set if inactive bullet points should fade to gray true/false (this modifies scss first, then compiles)
+You will be prompted to give the following inputs:
+* enter markdown file name
+* set if inactive bullet points should fade to gray true/false (modifies scss)
 
-You can also take all default options like so:
+You can also give the file name when calling the script and take all default options like so:
 
 ```bash
-python3 compile-sass.py --all-default
+python3 compile-sass-and-export-marp.py example.md --all-default
 ```
 
-This script no longer exports the presentation. Please use VSCode with the official marp extension instead.
+The html version of the presentation needs img/ and fonts/ next to it to be displayed correctly. The folder themes/ is no longer needed as the style code is embedded in the html file.

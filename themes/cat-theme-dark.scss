@@ -1,0 +1,233 @@
+@use "sass:list";
+@use "sass:math";
+
+$fade-inactive-bullets-to-gray: false;
+$logo-size: (330px, 60px); // we half this later so icons stay sharp when 1280x720px canvas is blown up to 1920x1080px
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+    font-weight: 200 900;
+  }
+
+$cat-color-1: #009bea;
+$cat-color-2: #c1d31c;
+$cat-color-3: #89d37e;
+$cat-color-4: #ce1970;
+$cat-color-5: #faae1d;
+$cat-color-6: #4a154b;
+$cat-darkgray: #5e5e5e;
+$cat-midgray: #686868;
+$cat-lightgray: #f5f5f5;
+$cat-bg-color: #ffffff;
+$cat-bg-color-1: #f4f4f4;
+$cat-bg-color-2: $cat-color-2;
+$cat-bg-dark-blue: #1A1D2D;
+$cat-text-color: #ffffff;
+$cat-text-color-invert: #ffffff;
+$cat-text-color-lightgray: #bbbbbb;
+
+:root {
+    color: $cat-text-color;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+section {
+    --bgColor-default: #{$cat-darkgray};
+    --color-fg-default: #{$cat-text-color};
+    // --color-fg-muted: #57606a;
+    // --color-fg-subtle: #6e7781
+    --h1-color: #{$cat-color-1};
+    --header-footer-color: #{$cat-text-color-lightgray};
+    --heading-strong-color: #{$cat-text-color};
+    --paginate-color: #{$cat-midgray};
+}
+
+h1, h2, h3, h4, h5, p {
+    font-weight: 200;
+    animation: fade-in .9s forwards;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+
+h1, h2, h3 {
+    strong {
+        background-color: rgba($cat-bg-color, .2);
+        color: $cat-text-color-invert;
+        font-weight: 200;
+        padding-inline: 20px;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+    }
+}
+
+h1 strong {
+    line-height: 3.2rem;
+}
+
+h2 strong {
+    line-height: 2.65rem;
+}
+
+h2 strong,
+section.chapter h2 strong {
+    background-color: $cat-color-1;
+}
+
+h3 strong,
+section.chapter h3 strong {
+    background-color: rgba($cat-bg-color, .2);
+}
+
+/* links */
+a {
+    background-color: $cat-color-1;
+    color: $cat-text-color-invert;
+    text-decoration: none;
+    padding-inline: 10px;
+    &:hover {
+        display: inline-block;
+        transform: scale(1.03);
+        transition: all ease-in 300ms;
+        text-decoration: none;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer {
+    color: transparent; // no text
+    left: 30px;
+    right: 30px;
+    bottom: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer::before,
+footer::after {
+    content: " ";
+    background-image: url(img/cat-logo-typo-text-weiss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: math.div(list.nth($logo-size, 1), 2);
+    height: math.div(list.nth($logo-size, 2), 2);
+}
+
+footer::after {
+    background-image: url(img/cate-logo-weiss.svg);
+    width: 90px;
+}
+
+// pagination
+
+section::after {
+    top: 21px;
+    left: auto;
+    right: 30px;
+}
+
+// li bullet points fade effect
+
+@if $fade-inactive-bullets-to-gray {
+    li:not([data-bespoke-marp-current-fragment="current"]) {
+        opacity: .4;
+    }
+}
+
+// animation templates
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+//
+// SLIDES WITH NO MARGIN HEADLINES
+//
+
+section.title {
+    &,
+    &--white-text {
+        h1, h2, h3 {
+            text-align: center;
+        }
+    }
+}
+
+//
+// SLIDES WITH HEADLINES CLOSE TOGETHER
+//
+
+section.title,
+section.chapter {
+    &,
+    &--white-text {
+        h1 + h2,
+        h1 + h3,
+        h2 + h3 {
+            margin-top: -30px;
+        }
+        h2 + h1,
+        h3 + h1 {
+            margin-top: -39px;
+        }
+    }
+}
+
+section.title,
+section.chapter {
+    & {
+        h3 + h2 {
+            margin-top: -19px;
+        }
+    }
+}
+
+section.title,
+section.chapter {
+    header {
+        display:none;
+    }
+}
+
+section.title {
+    background-image: url(img/bg-cat-gradient.png);
+    background-size: cover;
+}
+
+section.chapter,
+section.textbox,
+section.page-bg {
+    background-image: url(img/bg-cat-gray.png);
+    background-size: cover;
+}
+
+section.chapter {
+    h1,h2,h3 {
+        text-align: center;
+    }
+}
+
+section.textbox figure {
+    opacity: .1 !important;
+}
+
