@@ -21,12 +21,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cate-col-right33.png)
-![](img/cate_onboarding_comp.png)
-
----
-
-![bg left:50%](img/bg-cat-col-right50.png)
+![bg left:50%](img/bg-cat-col50.png)
 ### Was machen wir?
 
 * Digitalisierung in KMU
@@ -35,7 +30,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:50%](img/bg-cat-col-right50.png)
+![bg right:50%](img/bg-cat-col50.png)
 ### Wer redet?
 
 * Richard Klees
@@ -52,7 +47,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cat-col-right33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### Digitalisierung: Hilft das Wort?
 * Was mit Computer und Software machen?
 * Umwandeln von analogen Werten in digitale?
@@ -61,7 +56,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### Welche Bewertungskriterien kann ich verwenden?
 
 * Unmengen von Produkten und Möglichkeiten
@@ -71,7 +66,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cat-col-right33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### Bewertungskriterium: Digitalisierungsgrad
 
 * Wie digital soll der Prozess werden?
@@ -85,7 +80,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### Bewertungskriterium: Motivation
 
 * Warum soll digitalisiert werden?
@@ -107,7 +102,6 @@ footer: CaT Concepts and Training GmbH
 ---
 
 ![bg](img/matrix04.png)
-<!-- _class: chapter -->
 
 ---
 
@@ -118,7 +112,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cat-col-right33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### Beispiel: Lernen im Unternehmen
 
 * Pflichtschulungen
@@ -136,11 +130,10 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/matrix06.png)
-<!-- _class: chapter -->
+![bg](img/matrix05.png)
 
 ---
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### Pflichtschulungen digitalisieren?
 
 * Ausgangslage: Menschen werden persönlich zu Vor-Ort-Veranstaltung eingeladen
@@ -153,7 +146,15 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/cate_pflicht_comp.png)
+![bg](img/cate_pflicht01.png)
+
+---
+
+![bg](img/cate_pflicht02.png)
+
+---
+
+![bg](img/cate_pflicht03.png)
 
 ---
 
@@ -163,12 +164,11 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/matrix05.png)
-<!-- _class: chapter -->
+![bg](img/matrix06.png)
 
 ---
 
-![bg left:33%](img/bg-cat-col-left33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### Onboarding digitalisieren?
 
 * Ausgangslage: Neueinsteiger\*innen gehen verschiedene Stationen im Unternehmen ab
@@ -181,7 +181,15 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/cate_onboarding_comp.png)
+![bg](img/cate_onboard01.png)
+
+---
+
+![bg](img/cate_onboard02.png)
+
+---
+
+![bg](img/cate_onboard03.png)
 
 ---
 
@@ -192,11 +200,10 @@ footer: CaT Concepts and Training GmbH
 ---
 
 ![bg](img/matrix07.png)
-<!-- _class: chapter -->
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### Handbuch digitalisieren?
 
 * Ausgangslage: technische Dokumentation liegt in Form eines gedruckten Handbuchs vor
@@ -209,7 +216,11 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/cate_handbuch_comp.png)
+![bg](img/cate_handbuch01.png)
+
+---
+
+![bg](img/cate_handbuch02.png)
 
 ---
 
@@ -219,11 +230,10 @@ footer: CaT Concepts and Training GmbH
 ---
 
 ![bg](img/matrix08.png)
-<!-- _class: chapter -->
 
 ---
 
-![bg left:33%](img/bg-cat-col-right33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### Anwenderschulungen digitalisieren
 
 * Ausgangslage: Vertriebsmitarbeitende zeigen die Handhabung der Produkte vor Ort
@@ -236,7 +246,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg](img/cate_anwendung_comp.png)
+![bg](img/cate_anwendung01.png)
 
 ---
 
@@ -246,7 +256,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### Wrap-Up
 
 * Was soll durch Digitalisierung erreicht werden?
@@ -259,12 +269,12 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:50%](img/bg-cat-col-right33.png)
+![bg left:50%](img/bg-cat-col33.png)
 ### Zeit für Fragen
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 
 ### Kontakt
 richard.klees@concepts-and-training.de

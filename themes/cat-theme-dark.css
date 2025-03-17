@@ -100,7 +100,8 @@ footer {
   justify-content: space-between;
 }
 
-footer::before {
+footer::before,
+footer::after {
   content: " ";
   background-image: url(img/cat-logo-typo-text-weiss.svg);
   background-size: contain;
@@ -108,6 +109,11 @@ footer::before {
   opacity: 0.5;
   width: 165px;
   height: 30px;
+}
+
+footer::after {
+  background-image: url(img/cate-logo-weiss.svg);
+  width: 90px;
 }
 
 section::after {

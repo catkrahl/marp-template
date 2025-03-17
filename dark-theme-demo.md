@@ -22,7 +22,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cat-col-right33.png)
+![bg left:33%](img/bg-cat-col33.png)
 ### 33% Spalte - 66% Inhalt 
 
 * CaT Branding Spaltenhintergrund
@@ -30,7 +30,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 ### 66% Inhalt - 33% Spalte
 
 * CaT Branding Spaltenhintergrund
@@ -38,7 +38,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cate-col-right33.png)
+![bg left:33%](img/bg-cate-col33.png)
 ### 33% Spalte - 66% Inhalt
 
 * cate Branding Spaltenhintergrund
@@ -46,7 +46,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:33%](img/bg-cate-col-right33.png)
+![bg right:33%](img/bg-cate-col33.png)
 ### 66% Inhalt - 33% Spalte
 
 * cate Branding Spaltenhintergrund
@@ -60,7 +60,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:50%](img/bg-cat-col-right50.png)
+![bg left:50%](img/bg-cat-col50.png)
 ### 50% Spalte - 50% Inhalt
 
 * CaT Branding Spaltenhintergrund
@@ -68,7 +68,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:50%](img/bg-cat-col-right50.png)
+![bg right:50%](img/bg-cat-col50.png)
 ### 50% Inhalt - 50% Spalte
 
 * CaT Branding Spaltenhintergrund
@@ -76,7 +76,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:50%](img/bg-cate-col-right50.png)
+![bg left:50%](img/bg-cate-col50.png)
 ### 50% Spalte - 50% Inhalt
 
 * cate Branding Spaltenhintergrund
@@ -84,7 +84,7 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg right:50%](img/bg-cate-col-right50.png)
+![bg right:50%](img/bg-cate-col50.png)
 ### 50% Inhalt - 50% Spalte
 
 * cate Branding Spaltenhintergrund
@@ -98,22 +98,27 @@ footer: CaT Concepts and Training GmbH
 
 ---
 
-![bg left:33%](img/bg-cate-col-right33.png)
-![](img/cate_onboarding_comp.png)
+![bg left:33%](img/bg-cate-col33.png)
+![](img/img-template66.png)
 
 ---
 
-![bg](img/cate_onboarding_comp.png)
+![bg left:50%](img/bg-cate-col50.png)
+![](img/img-template50.png)
+
+---
+
+![bg](img/cate_onboard01.png)
 <!-- _class: chapter -->
 
 ---
 
-![bg left:50%](img/bg-cat-col-right33.png)
+![bg left:50%](img/bg-cat-col33.png)
 ### Zeit für Fragen
 
 ---
 
-![bg right:33%](img/bg-cat-col-right33.png)
+![bg right:33%](img/bg-cat-col33.png)
 
 ### Kontakt
 richard.klees@concepts-and-training.de
