@@ -75,7 +75,7 @@ section.chapter h3 strong {
 /* cate title and chapter typo bg-color */
 section.cate h2 strong,
 section.chapter.cate h2 strong {
-  background-color: #c71ea6;
+  background-color: #fdb400;
 }
 
 /* links */
@@ -92,6 +92,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* link color cate dark theme */
 section.cate a {
   background-color: #fdb400;
 }

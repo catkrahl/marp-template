@@ -96,7 +96,7 @@ section.chapter h3 strong {
 /* cate title and chapter typo bg-color */
 section.cate h2 strong,
 section.chapter.cate h2 strong {
-    background-color: $cate-color-1;
+    background-color: $cate-color-2;
 }
 
 /* links */
@@ -113,6 +113,7 @@ a {
     }
 }
 
+/* link color cate dark theme */
 section.cate a {
     background-color: $cate-color-2;
 }
